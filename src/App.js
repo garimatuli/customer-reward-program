@@ -19,7 +19,8 @@ function App() {
         setRewardPoints(0);
         // debugger;
         if (amount>=100){
-            setRewardPoints((x) => x = ((amount-100) * 2) + 50);
+            // setRewardPoints((x) => x = ((amount-100) * 2) + 50);
+            setRewardPoints(((amount-100) * 2) + 50);
         }
         if (amount>50 && amount <= 100){
             let points = rewardPoints + (amount - 50)
